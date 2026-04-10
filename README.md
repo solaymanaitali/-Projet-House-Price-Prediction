@@ -1,27 +1,29 @@
-# 🏠 House Price Prediction - Machine Learning & Streamlit
+# 🏠 House Price Prediction - Pipeline ML Bout-en-Bout
 
-Ce projet vise à prédire le prix des biens immobiliers en utilisant des modèles de régression. Il inclut un pipeline complet de Data Science : de l'analyse exploratoire des données à l'optimisation des hyperparamètres, jusqu'au déploiement d'une interface utilisateur interactive.
+Ce projet implémente une solution complète de machine learning pour la prédiction des prix immobiliers. Il intègre un pipeline de prétraitement automatisé, une optimisation des hyperparamètres et un déploiement via une application web interactive.
 
-## 🚀 Fonctionnalités
-* **Exploration des données (EDA) :** Visualisation des corrélations et distribution des prix.
-* **Modélisation :** Utilisation de l'algorithme **Random Forest Regressor**.
-* **Optimisation :** Recherche des meilleurs hyperparamètres via **GridSearchCV**.
-* **Interface Web :** Déploiement via **Streamlit** permettant de saisir les caractéristiques d'une maison pour obtenir une estimation instantanée.
+## 🌟 Points Forts du Projet
+* **Pipeline Scikit-Learn :** Automatisation du nettoyage (Imputation), de la mise à l'échelle (StandardScaler) et de l'encodage (OneHotEncoder).
+* **Optimisation Robuste :** Recherche par grille (**GridSearchCV**) pour identifier les meilleurs paramètres du modèle Random Forest.
+* **Gestion des Données :** Traitement différencié des variables numériques et catégorielles.
+* **Déploiement :** Interface utilisateur fluide avec **Streamlit**.
 
 ## 🛠️ Stack Technique
-* **Langage :** Python
-* **Data Science :** Pandas, NumPy, Scikit-Learn
-* **Visualisation :** Matplotlib, Seaborn
-* **Déploiement :** Streamlit
+* **Langage :** Python 3.x
+* **Librairies ML :** Scikit-Learn, Pandas, NumPy, Joblib
+* **Interface :** Streamlit
+* **Qualité :** Logging intégré pour le suivi de l'entraînement.
 
-## 📁 Structure du projet
-* `app.py` : Code de l'application interactive Streamlit.
-* `model_training.py` : Script d'entraînement et d'optimisation du modèle (GridSearchCV).
-* `data/` : Dossier contenant le dataset utilisé.
-* `notebooks/` : Analyses exploratoires (EDA).
+## 📂 Structure des Fichiers
+* `train.py` : Script d'entraînement complet (Prétraitement, GridSearch, Évaluation, Sauvegarde).
+* `app.py` : Application web Streamlit pour la prédiction en temps réel.
+* `data.csv` : Jeu de données source (contenant la cible `MEDV`).
+* `model.pkl` : Modèle sérialisé après entraînement.
 
-## ⚙️ Installation et Utilisation
-1. Cloner le dépôt :
-   ```bash
-   git clone [https://github.com/solaymanaitali/-Projet-House-Price-Prediction.git](https://github.com/solaymanaitali/-Projet-House-Price-Prediction.git)
-   cd -Projet-House-Price-Prediction
+## ⚙️ Utilisation
+
+### 1. Installation
+```bash
+git clone [https://github.com/solaymanaitali/Projet-House-Price-Prediction.git](https://github.com/solaymanaitali/Projet-House-Price-Prediction.git)
+cd Projet-House-Price-Prediction
+pip install -r requirements.txt
